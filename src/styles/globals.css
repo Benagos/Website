@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+	/* FONTS */
+	--font-onest: Onest, sans-serif;
+
+	/*  MERGED COLORS  */
+	--color-brandRed: #da3832;
+	--color-brandGreen: #6daf20;
+	--color-brandBlue: #1592e6;
+	--color-brandOrange: #e9983e;
+	--color-brandGray: #2a2c2f;
+}
+
+body {
+	@apply font-onest;
+	background: var(--background);
+	color: var(--foreground);
+}
+
+html {
+	scroll-behavior: smooth;
+}
