@@ -9,7 +9,7 @@ const Footer = () => {
 		<div className="bg-black">
 			<div className="max-w-[1400px] w-full mx-auto py-25 px-3 sm:px-6 lg:px-10 2xl:px-0">
 				<div className="flex flex-col xl:flex-row justify-between w-full gap-10 xl:gap-0">
-					<p className="max-w-sm text-sm font-light text-white">
+					<p className="max-w-sm text-sm font-light text-white -tracking-[0.2px]">
 						Benagos is a product studio on a mission to build human-first digital tools — for connection,
 						creativity, clarity, and change. Each of our products is a petal, blooming from one vision: to
 						make the internet more thoughtful.
@@ -77,7 +77,7 @@ const Footer = () => {
 							},
 						]?.map((f: any, index: number) => (
 							<div key={index}>
-								<p className="font-semibold text-[15px] text-[#979797]">{f?.name}</p>
+								<p className="font-semibold text-[15px] text-[#979797] -tracking-[0.5px]">{f?.name}</p>
 								<div className="font-light text-[13px] text-white flex flex-col gap-3 sm:gap-4 mt-4">
 									{f?.items?.map((m: any, index: number) => (
 										<Link
@@ -87,7 +87,7 @@ const Footer = () => {
 												m.link ? "text-brandOrange" : "text-white"
 											} transition-all ease-in-out duration-300`}
 										>
-											<p className="max-w-xs">{m?.name}</p>
+											<p className="max-w-xs -tracking-[0.2px]">{m?.name}</p>
 										</Link>
 									))}
 								</div>
@@ -101,7 +101,7 @@ const Footer = () => {
 
 				<hr className="border-white opacity-10" />
 				<div className="my-7 justify-between w-full flex flex-col sm:flex-row sm:items-center gap-5">
-					<p className="text-white font-light text-sm">
+					<p className="text-white font-light text-sm -tracking-[0.5px]">
 						© Benagos Technologies Limited, {new Date().getFullYear()}
 					</p>
 					<div className="flex items-center">
@@ -111,7 +111,7 @@ const Footer = () => {
 							{ name: "Brand Guide", link: "" },
 						]?.map((n: any, index: number, arr: any) => (
 							<Link href={n?.link} key={index} className="flex items-center">
-								<p className="text-white text-sm font-light hover:text-brandOrange ease-in-out transition-all duration-300">
+								<p className="text-white text-sm font-light hover:text-brandOrange ease-in-out transition-all duration-300 -tracking-[0.5px]">
 									{n?.name}
 								</p>
 								{arr?.length - 1 !== index && <Dot className="text-white size-5 mx-1" />}

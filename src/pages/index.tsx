@@ -1,4 +1,4 @@
-import FloatingNavbar from "@/components/FloatingNavbar";
+// import FloatingNavbar from "@/components/FloatingNavbar";
 import Navbar from "@/components/Navbar";
 import EatFresh from "@/components/sections/EatFresh";
 import Footer from "@/components/sections/Footer";
@@ -9,13 +9,15 @@ import Vision from "@/components/sections/Vision";
 export default function Home() {
 	return (
 		<>
-			<FloatingNavbar />
+			{/* <FloatingNavbar /> */}
 			<Navbar />
-			<Hero />
-			<LilyPad />
-			<EatFresh />
-			<Vision />
-			<Footer />
+			<div className="pt-[72px]">
+				<Hero />
+				<LilyPad />
+				<EatFresh />
+				<Vision />
+				<Footer />
+			</div>
 		</>
 	);
 }

@@ -22,7 +22,7 @@ const LilyPad = () => {
 					</motion.div>
 
 					<motion.p
-						className="text-white text-3xl lg:text-4xl font-semibold max-w-lg lg:max-w-4xl mx-auto text-center leading-8 lg:leading-10"
+						className="text-white text-3xl lg:text-4xl font-semibold max-w-lg lg:max-w-4xl mx-auto text-center leading-8 lg:leading-10 -tracking-[1px]"
 						initial={{ y: 40, opacity: 0 }}
 						whileInView={{ y: 0, opacity: 1 }}
 						transition={{ ease: easeInOut, duration: 0.3, delay: 0.3 }}
@@ -31,7 +31,7 @@ const LilyPad = () => {
 						Great way to make new friends and find your someone in the crowd
 					</motion.p>
 					<motion.p
-						className="text-base max-w-2xl mx-auto text-center font-light text-[#C8CEDE]"
+						className="text-base max-w-2xl mx-auto text-center font-light text-[#C8CEDE] -tracking-[0.5px]"
 						initial={{ y: 40, opacity: 0 }}
 						whileInView={{ y: 0, opacity: 1 }}
 						transition={{ ease: easeInOut, duration: 0.3, delay: 0.4 }}
@@ -66,33 +66,33 @@ const LilyPad = () => {
 						whileInView={{ y: 0, opacity: 1 }}
 						transition={{ ease: easeInOut, delay: 0.5, duration: 0.3 }}
 						viewport={{ once: true }}
-						className="mx-auto sm:mx-0"
+						className="mx-auto sm:mx-0 w-full sm:w-fit"
 					>
 						<CustomButton
 							name="Explore LilyPad"
-							className="border-2 border-brandGreen hover:bg-brandGreen"
+							className="border-2 border-brandGreen hover:bg-brandGreen w-full sm:w-fit"
 							right_icon={ArrowUpRight}
 						/>
 					</motion.div>
 				</div>
 			</div>
 			<motion.div
-				className="lg:bg-[url('/wave.svg')] w-full bg-cover bg-no-repeat pb-2 lg:pb-4 lg:pt-16 "
+				className="lg:bg-[url('/wave.png')] w-full bg-cover bg-no-repeat pb-2 lg:pb-4 lg:pt-16 "
 				initial={{ y: 20, opacity: 0 }}
 				whileInView={{ y: 0, opacity: 1 }}
 				transition={{ ease: easeInOut, delay: 0.6, duration: 0.3 }}
 				viewport={{ once: true }}
 			>
-				<div className="lg:flex gap-6 mx-auto w-full max-w-[1000px] overflow-hidden hidden">
-					{[{ img: "/img1.svg" }, { img: "/img2.svg" }, { img: "/img3.svg" }, { img: "/img4.svg" }].map(
+				<div className="lg:flex gap-6 mx-auto w-full max-w-[1100px] overflow-hidden hidden">
+					{[{ img: "/img1.png" }, { img: "/img2.png" }, { img: "/img3.png" }, { img: "/img-4.png" }].map(
 						(i: any, index: number) => (
 							<div
-								className={`h-[396.34px] min-w-[100px] w-full flex-1 relative ${
+								className={`h-[421px] min-w-[110px] w-full flex-1 relative ${
 									index % 2 !== 0 ? "mt-10" : "mt-0"
 								} rounded-2xl overflow-hidden`}
 								key={index}
 							>
-								<Image src={i?.img} fill alt="" style={{ objectFit: "cover" }} />
+								<Image src={i?.img} fill alt="" style={{ objectFit: "contain" }} />
 							</div>
 						)
 					)}

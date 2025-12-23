@@ -21,10 +21,10 @@ const Vision = () => {
 					</div>
 
 					<div>
-						<p className="text-white text-3xl font-bold mb-5 text-center lg:text-start w-fit mx-auto lg:mx-0">
+						<p className="text-white text-3xl font-bold mb-5 text-center lg:text-start w-fit mx-auto lg:mx-0 -tracking-[1px]">
 							About & Vision
 						</p>
-						<p className="text-white font-light max-w-md text-sm text-center lg:text-start w-fit mx-auto lg:mx-0">
+						<p className="text-white font-light max-w-md text-sm text-center lg:text-start w-fit mx-auto lg:mx-0 -tracking-[0.5px]">
 							Benagos is a digital product company focused on building thoughtful, well-designed software
 							that solves real problems. We create and own a portfolio of products across technology,
 							commerce, and intelligence—each built to stand on its own, yet stronger as part of a
@@ -74,8 +74,10 @@ const Vision = () => {
 							<div key={index} className="w-full flex flex-col gap-5">
 								<Icon className="text-white size-6 mx-auto" />
 								<div>
-									<p className="font-medium text-base text-center text-white mx-auto">{m?.name}</p>
-									<p className="font-light text-xs text-center text-white max-w-xs mt-2 mx-auto">
+									<p className="font-medium text-base text-center text-white mx-auto -tracking-[1px]">
+										{m?.name}
+									</p>
+									<p className="font-light text-xs text-center text-white max-w-xs mt-2 mx-auto -tracking-[0.1px]">
 										{m?.note}
 									</p>
 								</div>
