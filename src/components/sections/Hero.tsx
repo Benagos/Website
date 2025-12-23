@@ -4,18 +4,19 @@ import CustomGradientOutlineButton from "../CustomGradientOutlineButton";
 import { ArrowDown, Eye } from "lucide-react";
 import { easeInOut, motion } from "framer-motion";
 import Link from "next/link";
+import CustomGradientButton from "../CustomGradientButton";
 
 const Hero = () => {
 	return (
-		<div className="bg-[#0F0F0F] h-full lg:min-h-[90vh] overflow-hidden">
+		<div className="bg-[#0F0F0F] h-full lg:min-h-[75vh] overflow-hidden">
 			<div className="flex items-stretch justify-between">
-				<div className="relative w-[25%] h-[90vh] shrink-0 hidden lg:flex">
+				<div className="relative w-[25%] min-h-[75vh] shrink-0 hidden lg:flex">
 					<Image src="/ribbon-green.svg" alt="" fill style={{ objectFit: "cover" }} />
 				</div>
 
-				<div className=" px-3 sm:px-6 lg:px-0 pt-14 sm:pt-32 h-full lg:pt-0 lg:min-h-[90vh] flex flex-col justify-center items-center w-full gap-3 sm:gap-6 ">
+				<div className=" px-3 sm:px-6 lg:px-0 pt-14 sm:pt-32 h-full lg:pt-0 lg:min-h-[75vh] flex flex-col justify-center items-center w-full gap-3 sm:gap-6 ">
 					<motion.p
-						className="text-white font-medium text-base sm:text-lg text-center"
+						className="text-white font-medium text-base sm:text-lg text-center -tracking-[0.5px]"
 						initial={{ y: -20, opacity: 0 }}
 						animate={{ y: 0, opacity: 1 }}
 						transition={{ ease: easeInOut, delay: 0.1 }}
@@ -23,7 +24,7 @@ const Hero = () => {
 						Welcome to the Product Company
 					</motion.p>
 					<motion.p
-						className="text-white font-bold text-3xl sm:text-5xl text-center"
+						className="text-white font-bold text-3xl sm:text-5xl text-center -tracking-[1px]"
 						initial={{ y: -20, opacity: 0 }}
 						animate={{ y: 0, opacity: 1 }}
 						transition={{ ease: easeInOut, delay: 0.3 }}
@@ -32,7 +33,7 @@ const Hero = () => {
 						<br /> we build for the curious, the creative, and the community
 					</motion.p>
 					<motion.p
-						className="text-center font-light text-white text-sm sm:text-base"
+						className="text-center font-light text-white text-sm sm:text-base -tracking-[0.5px]"
 						initial={{ y: -20, opacity: 0 }}
 						animate={{ y: 0, opacity: 1 }}
 						transition={{ ease: easeInOut, delay: 0.5 }}
@@ -48,22 +49,40 @@ const Hero = () => {
 							animate={{ y: 0, opacity: 1 }}
 							transition={{ ease: easeInOut, delay: 0.5 }}
 						>
-							<CustomGradientOutlineButton name="Explore our Family of Apps" left_icon={ArrowDown} />
+							<div className="hidden sm:flex">
+								<CustomGradientOutlineButton name="Explore our Family of Apps" left_icon={ArrowDown} />
+							</div>
+							<div className="flex sm:hidden w-full">
+								<CustomGradientButton
+									name="Explore our Family of Apps"
+									left_icon={ArrowDown}
+									className="!py-6 !w-full"
+								/>
+							</div>
 						</motion.div>
 
 						<motion.div
 							initial={{ y: 20, opacity: 0 }}
 							animate={{ y: 0, opacity: 1 }}
 							transition={{ ease: easeInOut, delay: 0.5 }}
+							className="w-full"
 						>
-							<Link href="#vision">
-								<CustomGradientOutlineButton name="Benagos Vision" left_icon={Eye} />
-							</Link>
+							<div className="hidden sm:flex">
+								<Link href="#vision">
+									<CustomGradientOutlineButton name="Benagos Vision" left_icon={Eye} />
+								</Link>
+							</div>
+
+							<div className="flex sm:hidden w-full">
+								<Link href="#vision" className="w-full">
+									<CustomGradientButton name="Benagos Vision" left_icon={Eye} className="!py-6 !w-full" />
+								</Link>
+							</div>
 						</motion.div>
 					</div>
 				</div>
 
-				<div className="relative w-[25%] h-[90vh] shrink-0 hidden lg:flex">
+				<div className="relative w-[25%] min-h-[75vh] shrink-0 hidden lg:flex">
 					<Image src="/ribbon-red.svg" alt="" fill style={{ objectFit: "cover" }} />
 				</div>
 			</div>

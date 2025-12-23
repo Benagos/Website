@@ -19,7 +19,10 @@ const Navbar = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
 
 	return (
-		<div className="bg-black py-4 px-3 sm:px-6 lg:px-10 2xl:px-30" id="top">
+		<div
+			className="bg-black py-4 px-3 sm:px-6 lg:px-10 2xl:px-30 fixed top-0 w-full left-0 z-40"
+			id="top"
+		>
 			<AnimatePresence mode="wait">
 				{menuOpen && (
 					<motion.div

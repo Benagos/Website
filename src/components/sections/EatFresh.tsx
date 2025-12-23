@@ -6,7 +6,10 @@ import { motion, easeInOut } from "framer-motion";
 
 const EatFresh = () => {
 	return (
-		<div className="bg-[url('/eat-fresh.png')] overflow-hidden" id="eatfresh">
+		<div
+			className="bg-[url('/eat-fresh-bg.png')] overflow-hidden bg-cover bg-center w-full bg-no-repeat"
+			id="eatfresh"
+		>
 			<div className="pt-20 lg:pt-32 px-3 sm:px-6 lg:px-10 xl:px-0">
 				<div className="flex flex-col gap-6 lg:gap-5">
 					<motion.div
@@ -19,7 +22,7 @@ const EatFresh = () => {
 						<Image src="/eatfresh.svg" fill alt="" style={{ objectFit: "contain" }} />
 					</motion.div>
 					<motion.p
-						className="text-white text-3xl lg:text-4xl font-semibold max-w-lg lg:max-w-3xl mx-auto text-center leading-8 lg:leading-10"
+						className="text-white text-3xl lg:text-4xl font-semibold max-w-lg lg:max-w-3xl mx-auto text-center leading-8 lg:leading-10 -tracking-[1px]"
 						initial={{ y: 40, opacity: 0 }}
 						whileInView={{ y: 0, opacity: 1 }}
 						transition={{ ease: easeInOut, duration: 0.3, delay: 0.3 }}
@@ -28,7 +31,7 @@ const EatFresh = () => {
 						Your fridge? Always stocked — Your everyday meals freshly made just for you{" "}
 					</motion.p>
 					<motion.p
-						className="text-base max-w-2xl mx-auto text-center font-light text-[#C8CEDE]"
+						className="text-base max-w-2xl mx-auto text-center font-light text-[#C8CEDE] -tracking-[0.5px]"
 						initial={{ y: 40, opacity: 0 }}
 						whileInView={{ y: 0, opacity: 1 }}
 						transition={{ ease: easeInOut, duration: 0.3, delay: 0.4 }}
@@ -62,11 +65,11 @@ const EatFresh = () => {
 						whileInView={{ y: 0, opacity: 1 }}
 						transition={{ ease: easeInOut, delay: 0.5, duration: 0.3 }}
 						viewport={{ once: true }}
-						className="mx-auto sm:mx-0"
+						className="mx-auto sm:mx-0 w-full sm:w-fit"
 					>
 						<CustomButton
 							name="Explore EatFresh"
-							className="border-2 border-brandRed hover:bg-brandRed bg-[#191f28]"
+							className="border-2 border-brandRed hover:bg-brandRed bg-[#191f28] w-full sm:w-fit"
 							right_icon={ArrowUpRight}
 						/>
 					</motion.div>
@@ -79,32 +82,32 @@ const EatFresh = () => {
 				transition={{ ease: easeInOut, delay: 0.6, duration: 0.3 }}
 				viewport={{ once: true }}
 			>
-				<Image src="/phone.png" fill alt="" className="object-contain md:ml-4 lg:ml-0" />
+				<Image src="/p.png" fill alt="" className="object-contain md:ml-4 lg:ml-0" />
 				{/* right mockup web */}
 				<div className="absolute -bottom-1 -right-43 lg:-right-40 hidden md:block">
 					<div className="relative w-70 h-70">
-						<Image src="/right phone mockup.png" alt="" fill className="object-cover" />
+						<Image src="/right mockup.png" alt="" fill className="object-cover" />
 					</div>
 				</div>
 
 				{/* right mockup mobile */}
-				<div className="absolute -bottom-1 -right-5 sm:-right-32 md:hidden">
+				<div className="absolute -bottom-1 -right-3 sm:-right-35 md:hidden">
 					<div className="relative w-40 sm:w-70 h-40 sm:h-70">
-						<Image src="/right phone mockup mobile.png" alt="" fill className="object-contain" />
+						<Image src="/mobile-right.png" alt="" fill className="object-contain" />
 					</div>
 				</div>
 
 				{/* left mockup web */}
 				<div className="absolute top-13 -left-35 lg:-left-40 hidden md:block">
 					<div className="relative w-50 h-50">
-						<Image src="/left phone mockup.svg" alt="" fill className="object-contain" />
+						<Image src="/left mockup.svg" alt="" fill className="object-contain" />
 					</div>
 				</div>
 
 				{/* left mockup mobile */}
-				<div className="absolute top-18 sm:top-32 left-8 sm:-left-1 md:hidden">
-					<div className="relative w-40 sm:w-60 h-20">
-						<Image src="/left mockup mobile.png" alt="" fill className="object-contain" />
+				<div className="absolute top-18 sm:top-23 left-2 sm:-left-18 md:hidden">
+					<div className="relative w-40 sm:w-80 h-32">
+						<Image src="/mobile-left.png" alt="" fill className="object-contain" />
 					</div>
 				</div>
 			</motion.div>
