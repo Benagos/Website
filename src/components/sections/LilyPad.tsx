@@ -77,25 +77,28 @@ const LilyPad = () => {
 				</div>
 			</div>
 			<motion.div
-				className="lg:bg-[url('/wave.png')] w-full bg-cover bg-no-repeat pb-2 lg:pb-4 lg:pt-16 "
+				className="lg:bg-[url('/wave.webp')] w-full bg-cover bg-no-repeat pb-2 lg:pb-4 lg:pt-16 "
 				initial={{ y: 20, opacity: 0 }}
 				whileInView={{ y: 0, opacity: 1 }}
 				transition={{ ease: easeInOut, delay: 0.6, duration: 0.3 }}
 				viewport={{ once: true }}
 			>
 				<div className="lg:flex gap-6 mx-auto w-full max-w-[1100px] overflow-hidden hidden">
-					{[{ img: "/img1.png" }, { img: "/img2.png" }, { img: "/img3.png" }, { img: "/img-4.png" }].map(
-						(i: any, index: number) => (
-							<div
-								className={`h-[421px] min-w-[110px] w-full flex-1 relative ${
-									index % 2 !== 0 ? "mt-10" : "mt-0"
-								} rounded-2xl overflow-hidden`}
-								key={index}
-							>
-								<Image src={i?.img} fill alt="" style={{ objectFit: "contain" }} />
-							</div>
-						)
-					)}
+					{[
+						{ img: "/img1.webp" },
+						{ img: "/img2.png" },
+						{ img: "/img3.webp" },
+						{ img: "/img-4.png" },
+					].map((i: any, index: number) => (
+						<div
+							className={`h-[421px] min-w-[110px] w-full flex-1 relative ${
+								index % 2 !== 0 ? "mt-10" : "mt-0"
+							} rounded-2xl overflow-hidden`}
+							key={index}
+						>
+							<Image src={i?.img} fill alt="" style={{ objectFit: "contain" }} />
+						</div>
+					))}
 				</div>
 				<div className="relative h-[450px] sm:h-[680px] md:h-[800px] w-full lg:hidden">
 					<Image src="/img-mobile.svg" fill alt="" style={{ objectFit: "cover" }} />
