@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
 			<Head>
 				<title>Benagos, The Product Company</title>
 			</Head>
-			<Component {...pageProps} />;
+			<Component {...pageProps} />
 		</>
 	);
 }
