@@ -10,7 +10,7 @@ const Footer = () => {
 			<div className="max-w-[1400px] w-full mx-auto py-25 px-3 sm:px-6 lg:px-10 2xl:px-0">
 				<div className="flex flex-col xl:flex-row justify-between w-full gap-10 xl:gap-0">
 					<p className="max-w-sm text-sm font-light text-white -tracking-[0.2px]">
-						Benagos is a product studio on a mission to build human-first digital tools — for connection,
+						Benagos is a product studio on a mission to build human-first digital tools for connection,
 						creativity, clarity, and change. Each of our products is a petal, blooming from one vision: to
 						make the internet more thoughtful.
 					</p>
