@@ -5,6 +5,7 @@ import { ArrowDown, Eye } from "lucide-react";
 import { easeInOut, motion } from "framer-motion";
 import Link from "next/link";
 import CustomGradientButton from "../CustomGradientButton";
+import CustomButton from "../CustomButton";
 
 const Hero = () => {
 	return (
@@ -53,10 +54,10 @@ const Hero = () => {
 								<CustomGradientOutlineButton name="Explore our Family of Apps" left_icon={ArrowDown} />
 							</div>
 							<div className="flex sm:hidden w-full">
-								<CustomGradientButton
+								<CustomButton
 									name="Explore our Family of Apps"
 									left_icon={ArrowDown}
-									className="!py-6 !w-full"
+									className="!py-6 !w-full bg-white text-black"
 								/>
 							</div>
 						</motion.div>
