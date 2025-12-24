@@ -7,7 +7,7 @@ import { motion, easeInOut } from "framer-motion";
 const EatFresh = () => {
 	return (
 		<div
-			className="bg-[url('/eat-fresh-bg.png')] overflow-hidden bg-cover bg-center w-full bg-no-repeat"
+			className="bg-[url('/eat-fresh-bg.webp')] overflow-hidden bg-cover bg-center w-full bg-no-repeat"
 			id="eatfresh"
 		>
 			<div className="pt-20 lg:pt-32 px-3 sm:px-6 lg:px-10 xl:px-0">
@@ -82,7 +82,7 @@ const EatFresh = () => {
 				transition={{ ease: easeInOut, delay: 0.6, duration: 0.3 }}
 				viewport={{ once: true }}
 			>
-				<Image src="/p.png" fill alt="" className="object-contain md:ml-4 lg:ml-0" />
+				<Image src="/p.webp" fill alt="" className="object-contain md:ml-4 lg:ml-0" />
 				{/* right mockup web */}
 				<div className="absolute -bottom-1 -right-43 lg:-right-40 hidden md:block">
 					<div className="relative w-70 h-70">
