@@ -1,0 +1,30 @@
+{
+  "default_branch": "master",
+  "branches": [
+    "ehiziojie-portfolio",
+    "feature/orbital",
+    "fixes",
+    "master",
+    "origin",
+    "text-and-design-fixes",
+    "web-urls"
+  ],
+  "parent": {
+    "ehiziojie-portfolio": "master",
+    "feature/orbital": "master",
+    "fixes": "master",
+    "master": null,
+    "origin": "master",
+    "text-and-design-fixes": "master",
+    "web-urls": "master"
+  },
+  "order": [
+    "master",
+    "ehiziojie-portfolio",
+    "feature/orbital",
+    "fixes",
+    "origin",
+    "text-and-design-fixes",
+    "web-urls"
+  ]
+}
