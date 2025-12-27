@@ -32,6 +32,6 @@ html {
 
 @layer base {
 	#altFont p {
-		@apply tracking-tighter;
+		@apply tracking-tight;
 	}
 }
