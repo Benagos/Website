@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @theme {
 	/* FONTS */
 	--font-onest: Onest, sans-serif;
+	--font-googlesans: "Google Sans", sans-serif;
 
 	/*  MERGED COLORS  */
 	--color-brandRed: #da3832;
@@ -20,6 +22,16 @@ body {
 	color: var(--foreground);
 }
 
+#altFont {
+	@apply font-googlesans;
+}
+
 html {
 	scroll-behavior: smooth;
+}
+
+@layer base {
+	#altFont p {
+		@apply tracking-tighter;
+	}
 }
