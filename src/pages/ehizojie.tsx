@@ -5,7 +5,7 @@ import { motion, AnimatePresence, easeInOut } from "framer-motion";
 import { useState } from "react";
 import CustomButton from "@/components/CustomButton";
 import { ArrowUpRight } from "lucide-react";
-import { footer } from "framer-motion/client";
+import Head from "next/head";
 
 // types for navbar
 interface Navs {
@@ -97,6 +97,10 @@ const Ehiziojie = () => {
 
 	return (
 		<div className="bg-white" id="altFont">
+			<Head>
+				<title>Ehizojie Ihayere</title>
+				<link rel="icon" href="/ehi.ico" />
+			</Head>
 			{/* mobile sidebar ----------------------------------------------- */}
 			<AnimatePresence mode="wait">
 				{menuOpen && (
@@ -160,13 +164,13 @@ const Ehiziojie = () => {
 
 					<Link
 						href="/"
-						className="text-white bg-black px-4 py-2.5 rounded-full w-fit text-sm hover:bg-black/80 transition-all ease-in-out duration-300 hidden md:flex"
+						className="text-white bg-black px-4 py-2.5 rounded-full w-fit text-sm hover:bg-black/80 transition-all ease-in-out duration-300 flex"
 					>
 						Visit Blog
 					</Link>
 
 					<div
-						className="bg-[#1D1E1F] py-2 sm:py-[10px] px-3 sm:px-4 rounded-full flex gap-2 items-center md:hidden "
+						className="bg-[#1D1E1F] py-2 sm:py-[10px] px-3 sm:px-4 rounded-full gap-2 items-center hidden "
 						onClick={() => setMenuOpen(!menuOpen)}
 					>
 						<TbMenu className="text-white text-2xl" />
@@ -187,7 +191,7 @@ const Ehiziojie = () => {
 				>
 					Ehizojie is a Founder,
 					<br /> Digital Product Designer & Software Product Maker
-					<br /> creating internet products you’ve probably used
+					<br className="hidden lg:block" /> creating internet products you’ve probably used
 				</motion.p>
 
 				<div className="flex gap-4 items-center-safe mt-5.5">
