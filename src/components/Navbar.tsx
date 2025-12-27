@@ -35,7 +35,7 @@ const Navbar = () => {
 						<div className="bg-[#111111] p-4 max-w-md ml-auto min-h-screen">
 							<div className="flex flex-row-reverse justify-between items-center w-full">
 								<TbX className="text-white text-3xl" onClick={() => setMenuOpen(!menuOpen)} />
-								<Select onValueChange={(value: any) => setActiveLang(value)} value={activeLang}>
+								{/* <Select onValueChange={(value: any) => setActiveLang(value)} value={activeLang}>
 									<SelectTrigger className="w-fit bg-brandGray rounded-full px-3 py-5 focus-visible:ring-0 border-0 border-transparent cursor-pointer">
 										<div className="flex items-center gap-[10px]">
 											<Globe className="text-white size-4" />
@@ -60,7 +60,7 @@ const Navbar = () => {
 											)}
 										</SelectGroup>
 									</SelectContent>
-								</Select>
+								</Select> */}
 							</div>
 							<div className="flex flex-col gap-8 mt-12">
 								{[
@@ -112,7 +112,7 @@ const Navbar = () => {
 					</div>
 
 					<div className="lg:flex items-center gap-4 hidden">
-						<Select onValueChange={(value: any) => setActiveLang(value)} value={activeLang}>
+						{/* <Select onValueChange={(value: any) => setActiveLang(value)} value={activeLang}>
 							<SelectTrigger className="w-fit bg-brandGray rounded-full px-3 py-5 focus-visible:ring-0 border-0 border-transparent cursor-pointer">
 								<div className="flex items-center gap-[10px]">
 									<Globe className="text-white size-4" />
@@ -137,7 +137,7 @@ const Navbar = () => {
 									)}
 								</SelectGroup>
 							</SelectContent>
-						</Select>
+						</Select> */}
 						<CustomGradientButton name="Invest in Next Round" left_icon={User} />
 					</div>
 
@@ -145,29 +145,7 @@ const Navbar = () => {
 						className="bg-[#1D1E1F] py-2 sm:py-[10px] px-3 sm:px-4 rounded-full flex gap-2 items-center lg:hidden "
 						onClick={() => setMenuOpen(!menuOpen)}
 					>
-						<AnimatePresence mode="wait">
-							{!menuOpen ? (
-								<motion.div
-									initial={{ opacity: 0 }}
-									animate={{ opacity: 1 }}
-									exit={{ opacity: 0 }}
-									transition={{ ease: easeInOut, duration: 0.1 }}
-									key="open"
-								>
-									<TbMenu className="text-white text-2xl" />
-								</motion.div>
-							) : (
-								<motion.div
-									initial={{ opacity: 0 }}
-									animate={{ opacity: 1 }}
-									exit={{ opacity: 0 }}
-									transition={{ ease: easeInOut, duration: 0.1 }}
-									key="close"
-								>
-									<TbX className="text-white text-2xl" />
-								</motion.div>
-							)}
-						</AnimatePresence>
+						<TbMenu className="text-white text-2xl" />
 						<p className="text-white text-base sm:text-lg">MENU</p>
 					</div>
 				</div>
