@@ -123,7 +123,7 @@ const Ehiziojie = () => {
 							<div className="w-full flex flex-col justify-end mt-8">
 								<Link
 									href="/"
-									className="text-white flex flex-col justify-center items-center bg-black px-8 py-3 rounded-full w-fit ml-auto text-lg hover:bg-black/80 transition-all ease-in-out duration-300"
+									className="text-black flex flex-col justify-center items-center bg-white border-white border-2 px-8 py-3 rounded-full w-fit ml-auto text-lg hover:bg-transparent hover:text-white transition-all ease-in-out duration-300"
 								>
 									Visit Blog
 								</Link>
