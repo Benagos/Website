@@ -3,7 +3,7 @@ import Image from "next/image";
 import CustomButton from "../CustomButton";
 import { ArrowUpRight } from "lucide-react";
 import { motion, easeInOut } from "framer-motion";
-
+import Link from "next/link";
 const EatFresh = () => {
 	return (
 		<div
@@ -67,11 +67,13 @@ const EatFresh = () => {
 						viewport={{ once: true }}
 						className="mx-auto sm:mx-0 w-full sm:w-fit"
 					>
-						<CustomButton
-							name="Explore EatFresh"
-							className="border-2 border-brandRed hover:bg-brandRed bg-[#191f28] w-full sm:w-fit"
-							right_icon={ArrowUpRight}
-						/>
+						<Link href="https://eatfresh.benagos.com/" target="_blank">
+							<CustomButton
+								name="Explore EatFresh"
+								className="border-2 border-brandRed hover:bg-brandRed bg-[#191f28] w-full sm:w-fit"
+								right_icon={ArrowUpRight}
+							/>
+						</Link>
 					</motion.div>
 				</div>
 			</div>
