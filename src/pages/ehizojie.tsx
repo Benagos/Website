@@ -33,9 +33,9 @@ interface Connect {
 
 const Ehiziojie = () => {
 	const navs: Navs[] = [
-		{ name: "Benagos", link: "/" },
-		{ name: "LilyPad", link: "/" },
-		{ name: "EatFresh", link: "/" },
+		{ name: "Benagos", link: "https://benagos.com/" },
+		{ name: "LilyPad", link: "https://lilypad.benagos.com/" },
+		{ name: "EatFresh", link: "https://eatfresh.benagos.com/" },
 		{ name: "Zozo Interactive", link: "/" },
 	];
 
@@ -55,7 +55,7 @@ const Ehiziojie = () => {
 			logo: "lilypadalt.svg",
 			info:
 				"Inspired by nature, LilyPad is a social platform whether it’s meaningful talks or lighthearted moments, LilyPad is your safe, welcoming space to explore the world, one conversation at a time.",
-			link: "/",
+			link: "https://lilypad.benagos.com/",
 			btnText: "Explore LilyPad",
 			btnColor: "#6DAF20",
 		},
@@ -63,7 +63,7 @@ const Ehiziojie = () => {
 			logo: "eatfresh alt.svg",
 			info:
 				"Rooted in freshness and simplicity, EatFresh brings curated, freshly prepared meals closer to you—helping you eat better, with less effort, week after week. Its like having your personal Chef.",
-			link: "/",
+			link: "https://eatfresh.benagos.com/",
 			btnText: "Explore EatFresh",
 			btnColor: "#DA3832",
 		},
@@ -87,9 +87,9 @@ const Ehiziojie = () => {
 	];
 
 	const footer: Navs[] = [
-		{ name: "Visit Benagos", link: "" },
-		{ name: "Try out LilyPad", link: "" },
-		{ name: "Try out EatFresh", link: "" },
+		{ name: "Visit Benagos", link: "https://benagos.com/" },
+		{ name: "Try out LilyPad", link: "https://lilypad.benagos.com/" },
+		{ name: "Try out EatFresh", link: "https://eatfresh.benagos.com/" },
 		{ name: "Explore Zozo Interactive", link: "" },
 	];
 
@@ -117,21 +117,21 @@ const Ehiziojie = () => {
 							</div>
 							<div className="flex flex-col gap-8 mt-12">
 								{navs?.map((n: Navs, index: number) => (
-									<Link href={n?.link} key={index} onClick={() => setMenuOpen(!menuOpen)}>
+									<Link href={n?.link} key={index} target="_blank" onClick={() => setMenuOpen(!menuOpen)}>
 										<p className="text-white text-end text-xl hover:text-white/80 transition-all ease-in-out duration-300">
 											{n?.name}
 										</p>
 									</Link>
 								))}
 							</div>
-							<div className="w-full flex flex-col justify-end mt-8">
+							{/* <div className="w-full flex flex-col justify-end mt-8">
 								<Link
 									href="/"
 									className="text-black flex flex-col justify-center items-center bg-white border-white border-2 px-8 py-3 rounded-full w-fit ml-auto text-lg hover:bg-transparent hover:text-white transition-all ease-in-out duration-300"
 								>
 									Visit Blog
 								</Link>
-							</div>
+							</div> */}
 						</div>
 					</motion.div>
 				)}
@@ -154,6 +154,7 @@ const Ehiziojie = () => {
 								<Link
 									href={n?.link}
 									key={index}
+									target="_blank"
 									className="text-black text-base font-medium hover:opacity-55 transition-all ease-in-out duration-300"
 								>
 									{n?.name}
@@ -162,12 +163,12 @@ const Ehiziojie = () => {
 						</div>
 					</div>
 
-					<Link
+					{/* <Link
 						href="/"
 						className="text-white bg-black px-4 py-2.5 rounded-full w-fit text-sm hover:bg-black/80 transition-all ease-in-out duration-300 flex"
 					>
 						Visit Blog
-					</Link>
+					</Link> */}
 
 					<div
 						className="bg-[#1D1E1F] py-2 sm:py-[10px] px-3 sm:px-4 rounded-full gap-2 items-center hidden "
@@ -216,7 +217,9 @@ const Ehiziojie = () => {
 				>
 					Currently Lead Product Designer at Peerless & building my product company{" "}
 					<span className="text-black font-semibold underline">
-						<Link href="/">Benagos.</Link>
+						<Link href="https://benagos.com/" target="_blank">
+							Benagos.
+						</Link>
 					</span>
 				</motion.p>
 
@@ -306,6 +309,7 @@ const Ehiziojie = () => {
 							<Link
 								href={f?.link}
 								key={index}
+								target="_blank"
 								className="text-[#6E6D7A] font-medium text-sm tracking-tighter hover:text-[#6E6D7A]/80 transition-all ease-in-out duration-300 w-fit"
 							>
 								{f?.name}

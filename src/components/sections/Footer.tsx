@@ -22,11 +22,11 @@ const Footer = () => {
 								items: [
 									{
 										name: "LilyPad",
-										link: "/",
+										link: "https://lilypad.benagos.com/",
 									},
 									{
 										name: "EatFresh",
-										link: "/",
+										link: "https://eatfresh.benagos.com/",
 									},
 								],
 							},
@@ -83,6 +83,7 @@ const Footer = () => {
 										<Link
 											href={m?.link ?? "#"}
 											key={index}
+											target="_blank"
 											className={`${m?.link ? "cursor-pointer" : "cursor-auto"} hover:${
 												m.link ? "text-brandOrange" : "text-white"
 											} transition-all ease-in-out duration-300`}

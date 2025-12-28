@@ -29,7 +29,7 @@ export default function Document() {
 					content="Benagos is a digital product company focused on building thoughtful, well-designed software that solves real problems. We create and own a portfolio of products across technology, commerce, and intelligence—each built to stand on its own, yet stronger as part of a connected ecosystem.
 "
 				/>
-				<meta property="og:url" content="https://website-one-brown-83.vercel.app/" />
+				<meta property="og:url" content="https://benagos.com/" />
 				<meta property="og:author" name="Afolabi Babatunde Joseph" />
 				<meta property="og:author" name="Ehizojie Ihayere" />
 			</Head>

@@ -4,6 +4,7 @@ import React from "react";
 import CustomButton from "../CustomButton";
 import { ArrowUpRight } from "lucide-react";
 import { easeInOut, motion } from "framer-motion";
+import Link from "next/link";
 const LilyPad = () => {
 	return (
 		<div className="bg-[#1D1E1F]" id="lily">
@@ -68,11 +69,13 @@ const LilyPad = () => {
 						viewport={{ once: true }}
 						className="mx-auto sm:mx-0 w-full sm:w-fit"
 					>
-						<CustomButton
-							name="Explore LilyPad"
-							className="border-2 border-brandGreen hover:bg-brandGreen w-full sm:w-fit"
-							right_icon={ArrowUpRight}
-						/>
+						<Link href="https://lilypad.benagos.com/" target="_blank">
+							<CustomButton
+								name="Explore LilyPad"
+								className="border-2 border-brandGreen hover:bg-brandGreen w-full sm:w-fit"
+								right_icon={ArrowUpRight}
+							/>
+						</Link>
 					</motion.div>
 				</div>
 			</div>
