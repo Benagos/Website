@@ -23,24 +23,24 @@ const LilyPad = () => {
 					</motion.div>
 
 					<motion.p
-						className="text-white text-3xl lg:text-4xl font-semibold max-w-lg lg:max-w-4xl mx-auto text-center leading-8 lg:leading-10 -tracking-[1px]"
+						className="text-white text-3xl lg:text-4xl font-semibold max-w-[600px] mx-auto text-center leading-8 lg:leading-10 -tracking-[1px]"
 						initial={{ y: 40, opacity: 0 }}
 						whileInView={{ y: 0, opacity: 1 }}
 						transition={{ ease: easeInOut, duration: 0.3, delay: 0.3 }}
 						viewport={{ once: true }}
 					>
-						Great way to make new friends and find your someone in the crowd
+						Great way to make new friends and find your someone in the crowd{" "}
 					</motion.p>
 					<motion.p
-						className="text-base max-w-2xl mx-auto text-center font-light text-[#C8CEDE] -tracking-[0.5px]"
+						className="text-base max-w-[700px] mx-auto text-center font-light text-white -tracking-[0.5px]"
 						initial={{ y: 40, opacity: 0 }}
 						whileInView={{ y: 0, opacity: 1 }}
 						transition={{ ease: easeInOut, duration: 0.3, delay: 0.4 }}
 						viewport={{ once: true }}
 					>
 						Real-time conversations with strangers. Whether you’re looking for a quick chat, a fresh
-						perspective, or a friendly voice to break up your day, our app lets you connect with people in
-						a fun, anonymous way.
+						perspective, or a voice to break up your day, our app lets you connect with people in a fun,
+						anonymous way.
 					</motion.p>
 				</div>
 				{/* buttons */}

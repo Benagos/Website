@@ -22,7 +22,7 @@ const EatFresh = () => {
 						<Image src="/eatfresh.svg" fill alt="" style={{ objectFit: "contain" }} />
 					</motion.div>
 					<motion.p
-						className="text-white text-3xl lg:text-4xl font-semibold max-w-lg lg:max-w-3xl mx-auto text-center leading-8 lg:leading-10 -tracking-[1px]"
+						className="text-white text-3xl lg:text-4xl font-semibold max-w-lg lg:max-w-2xl mx-auto text-center leading-8 lg:leading-10 -tracking-[1px]"
 						initial={{ y: 40, opacity: 0 }}
 						whileInView={{ y: 0, opacity: 1 }}
 						transition={{ ease: easeInOut, duration: 0.3, delay: 0.3 }}
@@ -31,14 +31,15 @@ const EatFresh = () => {
 						Your fridge? Always stocked — Your everyday meals freshly made just for you{" "}
 					</motion.p>
 					<motion.p
-						className="text-base max-w-2xl mx-auto text-center font-light text-[#C8CEDE] -tracking-[0.5px]"
+						className="text-base max-w-[700px] mx-auto text-center font-light text-white -tracking-[0.5px]"
 						initial={{ y: 40, opacity: 0 }}
 						whileInView={{ y: 0, opacity: 1 }}
 						transition={{ ease: easeInOut, duration: 0.3, delay: 0.4 }}
 						viewport={{ once: true }}
 					>
-						Overall, Kusala has been a game-changer for our business. It has completely transformed how we
-						automate workflows, streamline processes, and collaborate efficiently all in one place.
+						EatFresh is a meal-ordering platform that connects you to freshly prepared, bulk-made meals
+						from trusted local vendors. Plan ahead, eat better, and enjoy everyday meals made fresh—just
+						for you.
 					</motion.p>
 				</div>
 				{/* buttons */}
@@ -77,40 +78,50 @@ const EatFresh = () => {
 					</motion.div>
 				</div>
 			</div>
+
 			<motion.div
-				className="relative h-[300px] w-full sm:h-[400px] sm:w-[400px] mx-auto"
 				initial={{ y: 20, opacity: 0 }}
 				whileInView={{ y: 0, opacity: 1 }}
 				transition={{ ease: easeInOut, delay: 0.6, duration: 0.3 }}
 				viewport={{ once: true }}
 			>
-				<Image src="/p.webp" fill alt="" className="object-contain md:ml-4 lg:ml-0" />
-				{/* right mockup web */}
-				<div className="absolute -bottom-1 -right-43 lg:-right-40 hidden md:block">
-					<div className="relative w-70 h-70">
-						<Image src="/right mockup.png" alt="" fill className="object-cover" />
-					</div>
-				</div>
-
-				{/* right mockup mobile */}
-				<div className="absolute -bottom-1 -right-3 sm:-right-35 md:hidden">
-					<div className="relative w-40 sm:w-70 h-40 sm:h-70">
-						<Image src="/mobile-right.png" alt="" fill className="object-contain" />
-					</div>
-				</div>
-
-				{/* left mockup web */}
-				<div className="absolute top-13 -left-35 lg:-left-40 hidden md:block">
-					<div className="relative w-50 h-50">
+				{/* left mockup mobile */}
+				<div className="block md:hidden">
+					<div className="relative w-40 sm:w-50 h-40 sm:h-50 ml-15 sm:ml-40 -mb-13 sm:-mb-16">
 						<Image src="/left mockup.svg" alt="" fill className="object-contain" />
 					</div>
 				</div>
 
-				{/* left mockup mobile */}
-				<div className="absolute top-18 sm:top-23 left-2 sm:-left-18 md:hidden">
+				<div className="relative h-[300px] w-full sm:h-[400px] sm:w-[400px] mx-auto">
+					<Image src="/p.webp" fill alt="" className="object-contain md:ml-4 lg:ml-0" />
+					{/* right mockup web */}
+					<div className="absolute bottom-10 sm:bottom-16 md:-bottom-1 right-0 sm:-right-20 md:-right-43 lg:-right-40">
+						<div className="relative w-55 sm:w-70 h-55 sm:h-70">
+							<Image src="/right mockup.png" alt="" fill className="object-cover" />
+						</div>
+					</div>
+
+					{/* right mockup mobile */}
+					{/* <div className="absolute -bottom-1 -right-3 sm:-right-35 md:hidden">
+					<div className="relative w-40 sm:w-70 h-40 sm:h-70">
+						<Image src="/mobile-right.png" alt="" fill className="object-contain" />
+					</div>
+				</div> */}
+
+					{/* left mockup web */}
+					<div className="absolute top-13 -left-35 lg:-left-40 hidden md:block">
+						<div className="relative w-50 h-50">
+							<Image src="/left mockup.svg" alt="" fill className="object-contain" />
+						</div>
+					</div>
+
+					{/* left mockup mobile */}
+
+					{/* <div className="absolute top-18 sm:top-23 left-2 sm:-left-18 md:hidden">
 					<div className="relative w-40 sm:w-80 h-32">
 						<Image src="/mobile-left.png" alt="" fill className="object-contain" />
 					</div>
+				</div> */}
 				</div>
 			</motion.div>
 		</div>

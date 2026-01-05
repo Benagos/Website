@@ -7,7 +7,7 @@ const Vision = () => {
 	return (
 		<div className="bg-black overflow-hidden " id="vision">
 			<div className="h-2 lg:h-4 w-full bg-white" />
-			<div className="max-w-[1400px] w-full mx-auto py-25 px-3 sm:px-6 lg:px-10 xl:px-0">
+			<div className="max-w-[1200px] w-full mx-auto py-25 px-3 sm:px-6 lg:px-10 xl:px-0">
 				<div className="flex flex-col-reverse lg:flex-row gap-16 lg:gap-0 items-stretch justify-between min-h-64">
 					<div className="relative w-full h-60 sm:h-80 lg:w-96 lg:h-auto">
 						<Image
@@ -42,16 +42,16 @@ const Vision = () => {
 					</div>
 				</div>
 
-				<div className="grid lg:grid-cols-3 gap-10 sm:gap-4 mx-auto mt-20 lg:mt-32">
+				<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4 mx-auto mt-20 lg:mt-32">
 					{[
-						{
-							name: "Invest in Next Round",
-							icon: TrendingUp,
-							note:
-								"Benagos Technologies is open for funding round to support our Family of Apps used by over 20M users globally",
-							btnIcon: User,
-							btnText: `Let's talk`,
-						},
+						// {
+						// 	name: "Invest in Next Round",
+						// 	icon: TrendingUp,
+						// 	note:
+						// 		"Benagos Technologies is open for funding round to support our Family of Apps used by over 20M users globally",
+						// 	btnIcon: User,
+						// 	btnText: `Let's talk`,
+						// },
 						{
 							name: "Invitation as a guest speaker",
 							icon: Users,
@@ -60,7 +60,7 @@ const Vision = () => {
 							btnText: `Contact`,
 						},
 						{
-							name: "Collab, Funding? Lets connect",
+							name: "Just to Chat? Lets connect",
 							icon: Heart,
 							note: `Lets discuss over a virtual coffee, my timezone is GMT +1 
               Available Thursdays - Saturday 6PM - 10PM`,
