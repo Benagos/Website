@@ -9,7 +9,7 @@ import {
 	SelectItem,
 	SelectTrigger,
 } from "@/components/ui/select";
-import { Globe, User } from "lucide-react";
+import { Eye, Globe, User } from "lucide-react";
 import CustomGradientButton from "./CustomGradientButton";
 import { TbMenu, TbX } from "react-icons/tb";
 import { motion, AnimatePresence, easeInOut } from "framer-motion";
@@ -74,13 +74,11 @@ const Navbar = () => {
 									</Link>
 								))}
 							</div>
-							<div className="flex flex-col gap-4 ml-auto w-fit mt-8">
-								<CustomGradientButton
-									name="Invest in Next Round"
-									left_icon={User}
-									className="!py-6 !lg:py-5"
-								/>
-							</div>
+							<Link href="#vision" className="w-full" onClick={() => setMenuOpen(!menuOpen)}>
+								<div className="flex flex-col gap-4 ml-auto w-fit mt-8">
+									<CustomGradientButton name="Learn About Us" left_icon={Eye} className="!py-6 !lg:py-5" />
+								</div>
+							</Link>
 						</div>
 					</motion.div>
 				)}
@@ -138,7 +136,9 @@ const Navbar = () => {
 								</SelectGroup>
 							</SelectContent>
 						</Select> */}
-						<CustomGradientButton name="Invest in Next Round" left_icon={User} />
+						<Link href="#vision" className="w-full">
+							<CustomGradientButton name="Learn About Us" left_icon={Eye} />
+						</Link>
 					</div>
 
 					<div

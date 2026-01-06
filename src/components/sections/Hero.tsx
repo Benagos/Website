@@ -68,15 +68,15 @@ const Hero = () => {
 							transition={{ ease: easeInOut, delay: 0.5 }}
 							className="w-full"
 						>
-							<div className="hidden sm:flex">
+							{/* <div className="hidden sm:flex">
 								<Link href="#vision">
 									<CustomGradientOutlineButton name="Benagos Vision" left_icon={Eye} />
 								</Link>
-							</div>
+							</div> */}
 
 							<div className="flex sm:hidden w-full">
 								<Link href="#vision" className="w-full">
-									<CustomGradientButton name="Benagos Vision" left_icon={Eye} className="!py-6 !w-full" />
+									<CustomGradientButton name="Learn About Us" left_icon={Eye} className="!py-6 !w-full" />
 								</Link>
 							</div>
 						</motion.div>
