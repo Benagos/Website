@@ -51,7 +51,9 @@ const Hero = () => {
 							transition={{ ease: easeInOut, delay: 0.5 }}
 						>
 							<div className="hidden sm:flex">
-								<CustomGradientOutlineButton name="Explore our Family of Apps" left_icon={ArrowDown} />
+								<Link href="#lily">
+									<CustomGradientOutlineButton name="Explore our Family of Apps" left_icon={ArrowDown} />
+								</Link>
 							</div>
 							<div className="flex sm:hidden w-full">
 								<CustomButton

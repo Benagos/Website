@@ -35,11 +35,13 @@ const Footer = () => {
 								items: [
 									{
 										name: "LilyPad Commons",
-										link: "/",
+										link:
+											"https://benagos.notion.site/LilyPad-Commons-1bf3c9f91dc78036a643f9967832f96f?source=copy_link",
 									},
 									{
 										name: "EatFresh Commons",
-										link: "/",
+										link:
+											"https://benagos.notion.site/EatFresh-Commons-2dc3c9f91dc78061b3d6fe86b5c498a6?source=copy_link",
 									},
 								],
 							},
@@ -48,19 +50,19 @@ const Footer = () => {
 								items: [
 									{
 										name: "Linkedin",
-										link: "/",
+										link: "https://linkedin.com/company/benagos",
 									},
 									{
 										name: "Instagram",
-										link: "/",
+										link: "https://instagram.com/benagoshq",
 									},
 									{
 										name: "X(Twitter)",
-										link: "/",
+										link: " https://x.com/benagoshq",
 									},
 									{
 										name: "TikTok",
-										link: "/",
+										link: "https://www.tiktok.com/@benagoshq",
 									},
 								],
 							},
@@ -68,7 +70,7 @@ const Footer = () => {
 								name: "Contact",
 								items: [
 									{
-										name: "Benagos LLC, Benagos Technologies Limited Lekki, Lagos, Nigeria",
+										name: "Benagos Technologies Limited Lagos, Nigeria",
 									},
 									{
 										name: "hello@benagos.com",
@@ -107,11 +109,22 @@ const Footer = () => {
 					</p>
 					<div className="flex items-center">
 						{[
-							{ name: "Privacy", link: "" },
-							{ name: "Terms", link: "" },
-							{ name: "Brand Guide", link: "" },
+							{
+								name: "Privacy",
+								link: "https://www.notion.so/benagos/Benagos-Privacy-2dd3c9f91dc78117a5feff78a3f2e58e",
+							},
+							{
+								name: "Cookie Policy",
+								link:
+									"https://benagos.notion.site/Benagos-Cookie-Policy-2dd3c9f91dc78125afb9fca236ee0738?source=copy_link",
+							},
+							{
+								name: "Brand Guide",
+								link:
+									"https://benagos.notion.site/Benagos-Brand-Guide-2e73c9f91dc780559ae6cb464ca1830e?source=copy_link",
+							},
 						]?.map((n: any, index: number, arr: any) => (
-							<Link href={n?.link} key={index} className="flex items-center">
+							<Link href={n?.link} key={index} className="flex items-center" target="_blank">
 								<p className="text-white text-sm font-light hover:text-brandOrange ease-in-out transition-all duration-300 -tracking-[0.5px]">
 									{n?.name}
 								</p>
