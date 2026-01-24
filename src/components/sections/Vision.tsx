@@ -2,8 +2,24 @@
 import { ChartLine, Heart, Mail, TrendingUp, User, Users, Video } from "lucide-react";
 import Image from "next/image";
 import CustomGradientOutlineButton from "../CustomGradientOutlineButton";
-
+import Link from "next/link";
+import { useState } from "react";
 const Vision = () => {
+	const [meetingIndex, setMeetingIndex] = useState(0);
+	const scheduleMeeting = () => {
+		const title = encodeURIComponent("Just to Chat? Let’s connect");
+		const details = encodeURIComponent(
+			"Let’s discuss over a virtual coffee.\nTimezone: GMT +1\nAvailable: Thursday – Saturday, 6PM – 10PM"
+		);
+
+		const url = `https://calendar.google.com/calendar/render?action=TEMPLATE
+	&text=${title}
+	&details=${details}
+	&location=Google+Meet`;
+
+		window.open(url.replace(/\s/g, ""), "_blank");
+	};
+
 	return (
 		<div className="bg-black overflow-hidden " id="vision">
 			<div className="h-2 lg:h-4 w-full bg-white" />
@@ -58,6 +74,7 @@ const Vision = () => {
 							note: "Avaliable as a speaker for workspace events or conferences physically or remotely",
 							btnIcon: Mail,
 							btnText: `Contact`,
+							link: "mailto:hello@benagos.com",
 						},
 						{
 							name: "Just to Chat? Lets connect",
@@ -66,6 +83,7 @@ const Vision = () => {
               Available Thursdays - Saturday 6PM - 10PM`,
 							btnIcon: Video,
 							btnText: `Schedule Meeting`,
+							link: "",
 						},
 					]?.map((m: any, index: number) => {
 						const Icon = m?.icon;
@@ -81,8 +99,21 @@ const Vision = () => {
 										{m?.note}
 									</p>
 								</div>
-								<div className="mt-auto max-w-xs mx-auto w-full">
-									<CustomGradientOutlineButton name={m?.btnText} left_icon={m?.btnIcon} />
+								<div
+									className="mt-auto max-w-xs mx-auto w-full"
+									onClick={() => {
+										if (index === 1) {
+											scheduleMeeting();
+										}
+									}}
+								>
+									{m?.link ? (
+										<Link href={m.link}>
+											<CustomGradientOutlineButton name={m.btnText} left_icon={m.btnIcon} />
+										</Link>
+									) : (
+										<CustomGradientOutlineButton name={m.btnText} left_icon={m.btnIcon} />
+									)}
 								</div>
 							</div>
 						);
