@@ -70,7 +70,13 @@ const Footer = () => {
 								name: "Contact",
 								items: [
 									{
-										name: "Benagos Technologies Limited Lagos, Nigeria",
+										name: (
+											<p>
+												Benagos Technologies Limited
+												<br />
+												Lagos, Nigeria
+											</p>
+										),
 									},
 									{
 										name: "hello@benagos.com",
@@ -90,7 +96,7 @@ const Footer = () => {
 												m.link ? "text-brandOrange" : "text-white"
 											} transition-all ease-in-out duration-300`}
 										>
-											<p className="max-w-xs -tracking-[0.2px]">{m?.name}</p>
+											<div className="max-w-xs -tracking-[0.2px]">{m?.name}</div>
 										</Link>
 									))}
 								</div>
