@@ -51,15 +51,17 @@ const EatFresh = () => {
 						transition={{ ease: easeInOut, delay: 0.5, duration: 0.3 }}
 						viewport={{ once: true }}
 					>
-						<div className="flex items-center gap-[10px]">
-							<div className="relative w-6 h-6">
-								<Image src="/appstore.png" fill alt="" style={{ objectFit: "contain" }} />
+						<Link href="https://onelink.to/qfvgmm" target="_blank">
+							<div className="flex items-center gap-[10px]">
+								<div className="relative w-6 h-6">
+									<Image src="/appstore.png" fill alt="" style={{ objectFit: "contain" }} />
+								</div>
+								<div className="relative w-6 h-6">
+									<Image src="/play.svg" fill alt="" style={{ objectFit: "contain" }} />
+								</div>
+								<p className="text-base font-medium">Download App</p>
 							</div>
-							<div className="relative w-6 h-6">
-								<Image src="/play.svg" fill alt="" style={{ objectFit: "contain" }} />
-							</div>
-							<p className="text-base font-medium">Download App</p>
-						</div>
+						</Link>
 					</motion.div>
 					<motion.div
 						initial={{ y: 20, opacity: 0 }}
