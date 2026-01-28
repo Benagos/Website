@@ -32,7 +32,7 @@ export default function Document() {
 				<meta property="og:url" content="https://benagos.com/" />
 				<meta property="og:author" name="Afolabi Babatunde Joseph" />
 				<meta property="og:author" name="Ehizojie Ihayere" />
-				<meta property="og:image" content="https://i.ibb.co/ksPZ2n45/Benagos.png?v=2" />
+				<meta property="og:image" content="https://benagos.com/images/benagos.png" />
 
 				{/* Twitter Cards */}
 				<meta name="twitter:card" content="summary_large_image" />
@@ -41,7 +41,7 @@ export default function Document() {
 					name="twitter:description"
 					content="Benagos is a digital product company focused on building thoughtful, well-designed software that solves real problems. We create and own a portfolio of products across technology, commerce, and intelligence—each built to stand on its own, yet stronger as part of a connected ecosystem"
 				/>
-				<meta name="twitter:image" content="https://i.ibb.co/ksPZ2n45/Benagos.png?v=2" />
+				<meta name="twitter:image" content="https://benagos.com/images/benagos.png" />
 			</Head>
 			<body className="antialiased">
 				<Main />
