@@ -32,11 +32,11 @@ export default function Document() {
 				<meta property="og:url" content="https://benagos.com/" />
 				<meta property="og:author" name="Afolabi Babatunde Joseph" />
 				<meta property="og:author" name="Ehizojie Ihayere" />
-				<meta property="og:image" content="https://benagos.com/images/benagos-card.png" />
+				<meta property="og:image" content="https://benagos.com/images/benagos-card.png?v=3" />
 
 				{/* Twitter Cards */}
 				<meta name="twitter:card" content="summary_large_image" />
-				<meta name="twitter:image" content="https://benagos.com/images/benagos-card.png" />
+				<meta name="twitter:image" content="https://benagos.com/images/benagos-card.png?v=3" />
 			</Head>
 			<body className="antialiased">
 				<Main />
