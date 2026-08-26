@@ -1,47 +1,59 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
-	return (
-		<Html lang="en">
-			<Head>
-				{/* onset font */}
-				<link rel="preconnect" href="https://fonts.googleapis.com" />
-				<link rel="preconnect" href="https://fonts.gstatic.com" />
-				<link
-					href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
-					rel="stylesheet"
-				/>
+  return (
+    <Html lang="en">
+      <Head>
+        {/* onset font */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
+          rel="stylesheet"
+        />
 
-				{/* google sans font */}
-				<link rel="preconnect" href="https://fonts.googleapis.com" />
-				<link rel="preconnect" href="https://fonts.gstatic.com" />
-				<link
-					href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
-					rel="stylesheet"
-				/>
+        {/* google sans font */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+          rel="stylesheet"
+        />
 
-				{/* open graph */}
-				<meta property="og:type" content="website" />
-				<meta property="og:site_name" content="Benagos" />
-				<meta property="og:title" content="Benagos, The Product Company" key="title" />
-				<meta
-					property="og:description"
-					content="Benagos is a digital product company focused on building thoughtful, well-designed software that solves real problems. We create and own a portfolio of products across technology, commerce, and intelligence—each built to stand on its own, yet stronger as part of a connected ecosystem.
+        {/* instrument sans font */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+          rel="stylesheet"
+        />
+
+        {/* open graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Benagos" />
+        <meta
+          property="og:title"
+          content="Benagos, The Product Company"
+          key="title"
+        />
+        <meta
+          property="og:description"
+          content="Benagos is a digital product company focused on building thoughtful, well-designed software that solves real problems. We create and own a portfolio of products across technology, commerce, and intelligence—each built to stand on its own, yet stronger as part of a connected ecosystem.
 "
-				/>
-				<meta property="og:url" content="https://benagos.com/" />
-				<meta property="og:author" name="Afolabi Babatunde Joseph" />
-				<meta property="og:author" name="Ehizojie Ihayere" />
-				<meta property="og:image" content="https://benagos.com/images/benagos.png?v=3" />
+        />
+        <meta property="og:url" content="https://benagos.com/" />
+        <meta property="og:author" name="Afolabi Babatunde Joseph" />
+        <meta property="og:author" name="Ehizojie Ihayere" />
+        <meta
+          property="og:image"
+          content="https://benagos.com/images/benagos.png?v=3"
+        />
 
-				{/* Twitter Cards */}
-				<meta name="twitter:card" content="summary_large_image" />
-				<meta name="twitter:image" content="https://benagos.com/images/benagos.png?v=3" />
-			</Head>
-			<body className="antialiased">
-				<Main />
-				<NextScript />
-			</body>
-		</Html>
-	);
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:image"
+          content="https://benagos.com/images/benagos.png?v=3"
+        />
+      </Head>
+      <body className="antialiased">
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  );
 }
